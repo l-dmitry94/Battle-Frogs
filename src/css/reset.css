@@ -103,9 +103,19 @@ address {
 
 .title {
   color: var(--blue-font);
-  font-family: 'Roboto';
   font-size: 28px;
   font-weight: 400;
   text-align: center;
   text-transform: uppercase;
+}
+
+.logo__icon {
+  width: 100px;
+  height: 16px;
+  fill: var(--blue-font);
+}
+
+.menu {
+  display: flex;
+  flex-direction: column;
 }
