@@ -1,0 +1,49 @@
+<section class="subscriptoin">
+    <div class="container">
+        <h2 class="title">Newsletter</h2>
+        <p class="subscriptoin__main-text">
+            Every week we will send you new designs and information about sales.
+        </p>
+        <form class="subscriptoin__form">
+            <div class="subscriptoin__form-element">
+                <div class="subscriptoin__input-wrap">
+                    <input type="text" class="subscriptoin__input" name="user-name" id="user-name" placeholder="Name"
+                        maxlength="16" minlength="2" required>
+                </div>
+            </div>
+            <div class="subscriptoin__form-element">
+                <div class="subscriptoin__input-wrap">
+                    <input type="email" class="subscriptoin__input" name="user-email" id="user-email"
+                        placeholder="E-mail" required>
+                </div>
+            </div>
+            <div class="subscriptoin__container-check">
+                <input type="checkbox" id="user-privacy" name="user-privacy" value="true"
+                    class="subscriptoin__check " />
+                <label for="user-privacy" class="subscriptoin__check-text">
+                    <span class="subscriptoin__span">
+                        <svg class="subscriptoin__icon-check" width="13" height="13">
+                            <use href="./images/icons.svg#icon-check"></use>
+                        </svg>
+                    </span>
+                    Agree to subscribe to the newsletter
+                </label>
+            </div>
+            <button type="submit" class="btn">Send</button>
+        </form>
+        <picture>
+            <source srcset="
+              ./img/subscriptoin/subscriptoin_mob-1x.jpg 1x,
+              ./img/subscriptoin/subscriptoin_mob-2x.jpg 2x
+            " media="(min-width: 320px)" />
+            <source srcset="
+              ./img/subscriptoin/subscriptoin_tab-1x.jpg 1x,
+              ./img/subscriptoin/subscriptoin_tab-2x.jpg 2x
+            " media="(min-width: 768px)" />
+            <source srcset="
+              ./img/subscriptoin/subscriptoin_deck-1x.jpg 1x,
+              ./img/subscriptoin/subscriptoin_deck-2x.jpg 2x
+            " media="(min-width: 1440px)" />
+            <img src="./img/subscriptoin/subscriptoin_uni.jpg" alt="sofa and table with vase" width="100%" />
+    </div>
+</section>
