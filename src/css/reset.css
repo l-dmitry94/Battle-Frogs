@@ -123,3 +123,27 @@ address {
 .no-scroll {
   overflow: hidden;
 }
+
+@media (min-width: 768px) {
+  .container {
+    max-width: 768px;
+    padding: 0 32px;
+  }
+
+  .logo__icon {
+    width: 127px;
+    height: 16px;
+    fill: var(--blue-font);
+  }
+
+  .menu__link {
+    font-size: 18px;
+  }
+}
+
+@media (min-width: 1440px) {
+  .container {
+    max-width: 1350px;
+    padding: 0 15px;
+  }
+}
