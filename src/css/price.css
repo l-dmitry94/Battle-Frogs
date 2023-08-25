@@ -31,3 +31,18 @@ font-weight: 400;
 font-size: 16px;
 font-weight: 700;
  }
+
+ @media screen and (min-width: 768px) {
+  .price__title{
+    font-size: 32px;
+  }
+  .price__text{
+    font-size: 18px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .price > .container {
+    max-width: 1096px;
+  }
+}
