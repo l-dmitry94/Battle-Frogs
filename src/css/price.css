@@ -21,7 +21,10 @@
  }
 
  .price__title{
+  color: var(--blue-font, #0A224A);
   text-transform: uppercase;
+font-size: 28px;
+font-weight: 400;
  }
 
  .price__text{
