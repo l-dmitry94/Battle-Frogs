@@ -7,7 +7,6 @@
   flex-direction: column;
 }
 
-
 .price__list-item {
    padding: 30px 0;
    border-top: 1px solid black;
@@ -21,14 +20,14 @@
  }
 
  .price__title{
-  color: var(--blue-font, #0A224A);
   text-transform: uppercase;
+  color: var(--blue-font, #0A224A);
 font-size: 28px;
 font-weight: 400;
  }
 
  .price__text{
   color: var(--blue-font, #0A224A);
+font-size: 16px;
 font-weight: 700;
-line-height: 24px;
  }
