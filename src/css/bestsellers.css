@@ -1,0 +1,16 @@
+/* .bestsellers__title {
+  margin-top: 64px;
+  margin-bottom: 21px;
+} */
+.bestsellers__link span {
+  color: var(--blue-font, #0a224a);
+  font-weight: 700;
+}
+.bestsellers__list-item:nth-child(n + 3) {
+  display: none;
+}
+/* .bestsellers__paragraph {
+  margin-top: 14px;
+  margin-bottom: 30px;
+  gap: 10px;
+} */
