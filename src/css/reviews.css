@@ -1,10 +1,8 @@
 .reviews {
 	background-color: var(--light-blue);
+	padding: 36px 0;
 }
-.reviews .container {
-	padding-top: 36px;
-	padding-bottom: 36px;
-}
+
 .reviews__list-item:not(:first-child) {
 	display: none;
 }
@@ -18,13 +16,11 @@
 }
 .reviews__list-customer {
 	display: flex;
+	align-items: center;
 	gap: 14px;
 	margin-bottom: 24px;
 }
-.reviews__list-customer-img-block {
-	max-width: 48px;
-	max-height: 48px;
-}
+
 .reviews__list-customer-title {
 	font-size: 18px;
 	text-transform: uppercase;
@@ -32,7 +28,6 @@
 .reviews__list-customer-content {
 	display: flex;
 	flex-direction: column;
-	align-items: flex-start;
 	gap: 2px;
 }
 .reviews__list-customer-text {
