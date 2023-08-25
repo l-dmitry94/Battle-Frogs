@@ -1,0 +1,109 @@
+.footer {
+  background: var(--blue-font, #0a224a);
+  padding-top: 36px;
+  padding-bottom: 16px;
+}
+
+.footer .container {
+}
+
+.footer__cover {
+  display: flex;
+  margin-bottom: 64px;
+  flex-direction: column;
+}
+
+.footer__wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 36px;
+}
+
+.footer .logo {
+  display: inline-block;
+}
+
+.footer .logo__icon {
+  fill: var(--white);
+}
+
+.footer__list-icons {
+  display: flex;
+  gap: 16px;
+}
+
+.footer__item-icons {
+}
+
+.footer__link-icons svg {
+  fill: var(--white);
+  width: 28px;
+  height: 28px;
+}
+
+.footer__nav {
+  margin-bottom: 36px;
+}
+
+.footer .menu {
+  gap: 8px;
+}
+
+.footer .menu__item {
+}
+
+.footer .menu__link {
+  color: var(--white, #fff);
+  line-height: 1.5;
+}
+
+.footer__address {
+  color: var(--white, #fff);
+  line-height: normal;
+  letter-spacing: 0.01em;
+}
+
+.footer__list-address {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-bottom: 36px;
+}
+
+.footer__item-address {
+}
+
+.footer__link-address {
+}
+
+.footer__list-tel {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.footer__item-tel {
+}
+
+.footer__link-tel {
+}
+
+.footter__mail {
+  display: none;
+}
+
+.footer__privacy {
+  color: var(--white, #fff);
+  text-align: center;
+  font-size: 12px;
+  line-height: 1.16;
+  letter-spacing: 0.01em;
+  max-width: 300px;
+  opacity: 0.6;
+  margin: 0 auto;
+}
+
+.footer__privacy-span {
+  text-decoration-line: underline;
+}
