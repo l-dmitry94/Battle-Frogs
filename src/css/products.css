@@ -1,0 +1,23 @@
+.products {
+    padding: 32px 0;
+}
+
+.products-title {
+    margin-bottom: 33px;
+}
+
+.products_list {
+    display: flex;
+}
+.products_list-item {
+    width: 100%;
+}
+.products_list-title {
+    font-size: 16px;
+    font-weight: 400;
+    margin-top: 16px;
+}
+
+.products_list-item:not(:nth-child(-n + 1)) {
+    display: none;
+}
