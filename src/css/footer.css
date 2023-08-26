@@ -55,7 +55,6 @@
 
 .footer .menu__link {
   color: var(--white, #fff);
-  line-height: 1.5;
 }
 
 .footer__address {
@@ -138,13 +137,14 @@
 
   .footer__nav {
     position: absolute;
-    top: 8px;
-    right: 224px;
+    top: 0px;
+    right: 216px;
     margin-bottom: 0;
   }
 
   .footer .menu {
     gap: 16px;
+    padding: 8px;
   }
 
   .footer__address {
@@ -193,8 +193,7 @@
   }
 
   .footer__nav {
-    right: 0;
-    left: 344px;
+    right: 468px;
   }
 
   .footer .menu {
