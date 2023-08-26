@@ -1,0 +1,69 @@
+.subscription {
+    margin: 64px 0;
+}
+
+.subscription .title {
+    margin-bottom: 20px;
+}
+
+.subscription__main-text {
+    margin-bottom: 30px;
+    font-size: 16px;
+}
+
+.subscription__form {
+    margin-bottom: 30px;
+}
+
+.subscription__form-element {
+    margin-bottom: 20px;
+}
+
+.subscription__input {
+    width: 100%;
+    height: 50px;
+    border: 1px solid var(--dark-grey);
+    border-radius: 4px;
+    padding-left: 20px;
+}
+
+.subscription__input::placeholder {
+    padding: auto 0;
+}
+/* Не работает, на обсуждение на зум */
+.subscription__input:focus {
+    border-color: var(--blue-font);
+}
+
+.subscription__container-check {
+    margin-bottom: 30px;
+}
+
+.subscription__check-text {
+    color: var(--checkbox-color);
+    font-size: 16px;
+    display: flex;
+}
+
+.subscription__span {
+    width: 25px;
+    height: 25px;
+    border: 1px solid var(--dark-grey);
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    fill: transparent;
+    margin-right: 8px;
+}
+/* Нужно выкачать иконку нормально */
+.subscription__check:checked+.subscription__check-text .subscription__span {
+    background-color: var(--blue-font);
+    border: none;
+    fill: var(--white);
+}
+
+/* НУжно добавить цвет в вары и прописать через вар, потом этот стиль добавить в styles.css */
+.btn:hover,
+.btn:focus {
+    background-color: #061835;
+}
