@@ -31,3 +31,23 @@ font-weight: 400;
 font-size: 16px;
 font-weight: 700;
  }
+
+ @media screen and (min-width: 768px) {
+  .price{
+    padding: 50px 0;
+  }
+  .price__title{
+    font-size: 32px;
+    line-height: 45px;
+  }
+  .price__text{
+    font-size: 18px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .price__list {
+    max-width: 1096px;
+    margin: 0 auto;
+  }
+}
