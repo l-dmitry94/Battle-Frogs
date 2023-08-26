@@ -9,15 +9,56 @@
 .products_list {
     display: flex;
 }
+
 .products_list-item {
     width: 100%;
 }
+
 .products_list-title {
     font-size: 16px;
     font-weight: 400;
     margin-top: 16px;
 }
 
-.products_list-item:not(:nth-child(-n + 1)) {
-    display: none;
+
+
+ @media screen and (min-width: 320px) and (max-width: 767px) { 
+    .products_list-item:not(:nth-child(-n + 1)) {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 375px) {}
+
+@media screen and (min-width: 768px) and (max-width: 1439px) {
+    .products_list-item:not(:nth-child(-n + 2)) {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .products {
+        padding: 50px 0;
+    }
+
+    .products-title {
+        font-size: 32px;
+        line-height: 1.4;
+        margin-bottom: 30px;
+    }
+
+    .products_list {
+        gap: 16px;
+    }
+
+    .products_list-title {
+        font-size: 18px;
+        margin-top: 15px;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    .products_list {
+        gap: 24px;
+    }
 }
