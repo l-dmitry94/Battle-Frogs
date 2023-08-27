@@ -8,7 +8,6 @@
 
 .subscription__main-text {
     margin-bottom: 30px;
-    font-size: 16px;
 }
 
 .subscription__form {
@@ -30,7 +29,7 @@
 .subscription__input::placeholder {
     padding: auto 0;
 }
-/* Не работает, на обсуждение на зум */
+
 .subscription__input:focus {
     border-color: var(--blue-font);
 }
@@ -41,7 +40,6 @@
 
 .subscription__check-text {
     color: var(--checkbox-color);
-    font-size: 16px;
     display: flex;
 }
 
@@ -55,15 +53,75 @@
     fill: transparent;
     margin-right: 8px;
 }
+
 /* Нужно выкачать иконку нормально */
 .subscription__check:checked+.subscription__check-text .subscription__span {
     background-color: var(--blue-font);
     border: none;
-    fill: var(--white);
+    stroke: var(--white);
 }
 
-/* НУжно добавить цвет в вары и прописать через вар, потом этот стиль добавить в styles.css */
+/* НУжно добавить цвет в вары и прописать через вар, потом этот стиль добавить в reset.css */
 .btn:hover,
 .btn:focus {
     background-color: #061835;
+}
+
+@media (min-width: 768px) {
+    .subscription {
+        margin: 100px 0;
+    }
+
+    .subscription .title {
+        margin-bottom: 30px;
+        text-align: left;
+    }
+
+    .subscription__main-text {
+        margin-bottom: 20px;
+        font-size: 18px;
+        width: 536px;
+    }
+
+    .subscription__form {
+        margin-bottom: 34px;
+        width: 536px;
+    }
+
+    .subscription__container-check {
+        margin-bottom: 32px;
+    }
+
+    .subscription__check-text {
+        font-size: 18px;
+    }
+
+}
+
+@media (min-width: 1440px) {
+    .subscription {
+        margin: 100px 0 86px 0;
+    }
+
+    .subscription .container {
+        display: flex;
+        gap: 100px;
+        justify-content: center;
+    }
+
+    .subscription .title {
+        margin-bottom: 32px;
+    }
+
+    .subscription__main-text {
+        margin-bottom: 22px;
+    }
+
+    .subscription__form {
+        margin-bottom: 0;
+    }
+
+    .subscription__form-element {
+        margin-bottom: 22px;
+    }
 }
