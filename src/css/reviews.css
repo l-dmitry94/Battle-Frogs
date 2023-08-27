@@ -85,4 +85,7 @@
 		max-width: calc((100% - 48px) / 3);
 		padding: 32px;
 	}
+	.reviews__list-customer {
+		margin-bottom: 16px;
+	}
 }
