@@ -28,6 +28,12 @@
 }
 
 @media screen and (min-width: 768px) {
+  .bestsellers {
+    padding: 50px 0 100px;
+  }
+  .bestsellers__block {
+    margin-bottom: 32px;
+  }
   .bestsellers__list-item:nth-child(n + 3) {
     display: block;
   }
@@ -40,5 +46,23 @@
   .bestsellers__paragraph,
   .bestsellers__span {
     font-size: 18px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .bestsellers__wrapper {
+    display: flex;
+    gap: 24px;
+    max-width: 1096px;
+    margin: 0 auto;
+  }
+  .bestsellers__block {
+    margin-bottom: 0;
+  }
+  .bestsellers__list {
+    gap: 25px 20px;
+  }
+  .bestsellers__list-item {
+    width: calc((100% - 20px) / 2);
   }
 }
