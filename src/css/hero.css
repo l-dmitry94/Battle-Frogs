@@ -137,7 +137,8 @@
       background-size: 320px, 650px, 320px;
     }
       .hero__text-container {
-    padding-left: 1002px;
+        display: flex;
+        justify-content: end;
     gap: 30px;
   }
   }
