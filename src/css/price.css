@@ -51,3 +51,28 @@ font-weight: 700;
     margin: 0 auto;
   }
 }
+
+/* Animation */
+.price__title{
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+
+.price__title::before {
+  content: ''; 
+  display: block;
+
+  width: 0; 
+  height: 2px; 
+  background-color: var(--blue-font); 
+  transition: width 300ms 400ms ease-in-out, margin-right 300ms 400ms ease-in-out; 
+}
+
+.price__title:hover::before, 
+.price__title:focus::before {
+  width: 35px;
+  margin-right: 25px;
+}
+
