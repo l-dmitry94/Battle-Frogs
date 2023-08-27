@@ -60,6 +60,7 @@
     margin-bottom: 0;
   }
   .bestsellers__list {
+    max-width: 536px;
     gap: 25px 20px;
   }
   .bestsellers__list-item {
