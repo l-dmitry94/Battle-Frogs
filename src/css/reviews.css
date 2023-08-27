@@ -41,3 +41,51 @@
 	line-height: 1.43;
 	color: var(--blue-font);
 }
+@media (min-width: 768px) {
+	.reviews__list {
+		display: flex;
+		gap: 16px;
+	}
+	.reviews__list-item:not(:last-child) {
+		display: initial;
+	}
+	.reviews__list-item {
+		max-width: calc((100% - 16px) / 2);
+	}
+	.reviews__list-customer-title {
+		font-size: 20px;
+		line-height: 2.25;
+		}
+	.reviews__list-customer-text {
+		font-size: 16px;
+		line-height: 1.5;
+	}
+		.reviews__list-text {
+		font-size: 18px;
+		line-height: 1.5;
+	}
+	.reviews__list-customer-content {
+		gap: 4px;
+	}
+	.reviews__list-customer {
+		margin-bottom: 14px;
+	}
+}
+@media (min-width: 1440px) {
+	.reviews {
+		padding: 60px 0;
+	}
+	.reviews__list {
+		gap: 24px;
+	}
+	.reviews__list-item:last-child{
+		display: initial;
+	}
+	.reviews__list-item {
+		max-width: calc((100% - 48px) / 3);
+		padding: 32px;
+	}
+	.reviews__list-customer {
+		margin-bottom: 16px;
+	}
+}
