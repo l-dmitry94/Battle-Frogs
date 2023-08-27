@@ -51,6 +51,10 @@
         gap: 24px;
     }
 
+    .products__list-item {
+        flex-basis: calc((100% - 24x) / 3);
+    }
+
     .products__list-item:not(:nth-child(-n + 1)) {
         display: block;
     }
