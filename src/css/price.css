@@ -54,30 +54,25 @@ font-weight: 700;
 
 /* Animation */
 .price__title{
-  transition: 500ms;
-  position: relative;
-}
-.price__title:hover, 
-.price__title:focus{
-transform:translateX(50%);
+  display: flex;
+  align-items: center;
+  cursor: pointer;
 }
 
 
 .price__title::before {
   content: ''; 
-  position: absolute; 
-  top: 50%; 
-  left: -50%; 
-  transform: translateY(-50%); 
+  display: block;
+
   width: 0; 
-  height: 0; 
-  background-color: black; 
-  transition: width 300ms; 
+  height: 2px; 
+  background-color: var(--blue-font); 
+  transition: width 300ms 400ms ease-in-out, margin-right 300ms 400ms ease-in-out; 
 }
 
 .price__title:hover::before, 
 .price__title:focus::before {
   width: 35px;
-  height: 1px;
+  margin-right: 25px;
 }
 
