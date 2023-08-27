@@ -139,6 +139,11 @@ address {
   .menu__link {
     font-size: 18px;
   }
+
+  .title {
+    font-size: 32px;
+    line-height: 1.41;
+  }
 }
 
 @media (min-width: 1440px) {
