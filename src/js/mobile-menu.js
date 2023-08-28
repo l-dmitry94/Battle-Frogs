@@ -1,5 +1,5 @@
 (() => {
-    const mobileMenu = document.querySelector(".header__nav");
+    const mobileMenu = document.querySelector(".mobile-menu");
     const openMenuBtn = document.querySelector(".header__button");
     const body = document.querySelector("body");
     const mobileLinkRef = document.querySelector("#menu");
