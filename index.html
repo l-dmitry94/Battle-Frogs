@@ -8,8 +8,8 @@
   <title>Minimal</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css" integrity="sha512-4xo8blKMVCiXpTaLzQSLSw3KFOVPWhm/TRtuPVc4WG6kUgjH6J03IBuG7JZPkcWMxJ5huwaBpOpnwYElP/m6wg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   
-  <script type="module" crossorigin src="/Battle-Frogs/assets/index-b048727a.js"></script>
-  <link rel="stylesheet" href="/Battle-Frogs/assets/index-8ca1f664.css">
+  <script type="module" crossorigin src="/Battle-Frogs/assets/index-4a085a9b.js"></script>
+  <link rel="stylesheet" href="/Battle-Frogs/assets/index-ac91c3e3.css">
 </head>
 
 <body>
@@ -19,7 +19,7 @@
         <div class="header__block">
             <a class="logo" href="./">
                 <svg class="logo__icon">
-                    <use href="/Battle-Frogs/assets/icons-281520cc.svg#icon-logo"></use>
+                    <use href="/Battle-Frogs/assets/icons-8f0f77e1.svg#icon-logo"></use>
                 </svg>
             </a>
             <nav class="header__nav">
@@ -58,8 +58,8 @@
             </nav>
             <button class="header__button" type="button" aria-expanded="false">
                 <svg class="header__button-icon">
-                    <use class="header__button-icon-burger" href="/Battle-Frogs/assets/icons-281520cc.svg#icon-burger"></use>
-                    <use class="header__button-icon-close" href="/Battle-Frogs/assets/icons-281520cc.svg#icon-close"></use>
+                    <use class="header__button-icon-burger" href="/Battle-Frogs/assets/icons-8f0f77e1.svg#icon-burger"></use>
+                    <use class="header__button-icon-close" href="/Battle-Frogs/assets/icons-8f0f77e1.svg#icon-close"></use>
                 </svg>
             </button>
         </div>
@@ -103,7 +103,7 @@
 
 <button class="scroll-button" id="scrollToTopButton" type="button">
     <svg class="scroll-button__icon">
-        <use href="/Battle-Frogs/assets/icons-281520cc.svg#icon-up"></use>
+        <use href="/Battle-Frogs/assets/icons-8f0f77e1.svg#icon-up"></use>
     </svg>
 </button>
 
@@ -500,20 +500,29 @@
             <form class="subscription__form">
                 <div class="subscription__form-element">
                     <div class="subscription__input-wrap">
-                        <input type="text" class="subscription__input" name="user-name" id="user-name" placeholder="Name" maxlength="16" minlength="2" required>
+                        <input type="text" class="subscription__input" name="user-name" id="user-name"
+                            placeholder="Name" maxlength="16" minlength="2" pattern="[A-Za-zА\s]+">
+                        <svg class="subscription__form-error">
+                            <use href="/Battle-Frogs/assets/icons-8f0f77e1.svg#icon-error"></use>
+                        </svg>
                     </div>
                 </div>
                 <div class="subscription__form-element">
                     <div class="subscription__input-wrap">
-                        <input type="email" class="subscription__input" name="user-email" id="user-email" placeholder="E-mail" required>
+                        <input type="email" class="subscription__input" name="user-email" id="user-email"
+                            placeholder="E-mail" pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}">
+                        <svg class="subscription__form-error">
+                            <use href="/Battle-Frogs/assets/icons-8f0f77e1.svg#icon-error"></use>
+                        </svg>
                     </div>
                 </div>
                 <div class="subscription__container-check">
-                    <input type="checkbox" id="user-privacy" name="user-privacy" value="true" class="subscription__check visually-hidden" />
+                    <input type="checkbox" id="user-privacy" name="user-privacy" value="true"
+                        class="subscription__check visually-hidden" />
                     <label for="user-privacy" class="subscription__check-text">
                         <span class="subscription__span">
                             <svg class="subscription__icon-check" width="13" height="13">
-                                <use href="/Battle-Frogs/assets/icons-281520cc.svg#icon-check"></use>
+                                <use href="/Battle-Frogs/assets/icons-8f0f77e1.svg#icon-check"></use>
                             </svg>
                         </span>
                         Agree to subscribe to the newsletter
@@ -523,10 +532,10 @@
             </form>
         </div>
         <picture>
-            <source srcset="/Battle-Frogs/assets/subscriptoin_deck-1x-53c0a79d.jpg 1x, /Battle-Frogs/assets/subscriptoin_deck-2x-47e15040.jpg 2x" media="(min-width: 1440px)" />
-            <source srcset="/Battle-Frogs/assets/subscriptoin_tab-1x-d76b258c.jpg 1x, /Battle-Frogs/assets/subscriptoin_tab-2x-10c72753.jpg 2x" media="(min-width: 768px)" />
-            <source srcset="/Battle-Frogs/assets/subscriptoin_mob-1x-5afa0a9e.jpg 1x, /Battle-Frogs/assets/subscriptoin_mob-2x-a3510447.jpg 2x" media="(min-width: 320px)" />
-            <img src="/Battle-Frogs/assets/subscriptoin_deck-1x-53c0a79d.jpg" alt="sofa and table with vase" width="704" />
+            <source srcset="/Battle-Frogs/assets/subscriptoin_deck-1x-53c0a79d.jpg 1x, /Battle-Frogs/assets/subscriptoin_deck-2x-47e15040.jpg 2x" media="(min-width: 1440px)" width="460" />
+            <source srcset="/Battle-Frogs/assets/subscriptoin_tab-1x-d76b258c.jpg 1x, /Battle-Frogs/assets/subscriptoin_tab-2x-10c72753.jpg 2x" media="(min-width: 768px)" width="704"/>
+            <source srcset="/Battle-Frogs/assets/subscriptoin_mob-1x-5afa0a9e.jpg 1x, /Battle-Frogs/assets/subscriptoin_mob-2x-a3510447.jpg 2x" media="(min-width: 320px)" width="343" />
+            <img src="/Battle-Frogs/assets/subscriptoin_deck-1x-53c0a79d.jpg" alt="sofa and table with vase" width="460" />
         </picture>
     </div>
 </section>
@@ -539,7 +548,7 @@
       <div class="footer__wrapper">
         <a class="logo" href="./">
           <svg class="logo__icon">
-            <use href="/Battle-Frogs/assets/icons-281520cc.svg#icon-logo"></use>
+            <use href="/Battle-Frogs/assets/icons-8f0f77e1.svg#icon-logo"></use>
           </svg>
         </a>
 
@@ -547,21 +556,21 @@
           <li class="footer__item-icons">
             <a class="footer__link-icons" href="https://www.facebook.com/" target="_blank">
               <svg>
-                <use href="/Battle-Frogs/assets/icons-281520cc.svg#icon-facebook"></use>
+                <use href="/Battle-Frogs/assets/icons-8f0f77e1.svg#icon-facebook"></use>
               </svg>
             </a>
           </li>
           <li class="footer__item-icons">
             <a class="footer__link-icons" href="https://www.instagram.com/" target="_blank">
               <svg>
-                <use href="/Battle-Frogs/assets/icons-281520cc.svg#icon-instagram"></use>
+                <use href="/Battle-Frogs/assets/icons-8f0f77e1.svg#icon-instagram"></use>
               </svg>
             </a>
           </li>
           <li class="footer__item-icons">
             <a class="footer__link-icons" href="https://www.youtube.com/" target="_blank">
               <svg>
-                <use href="/Battle-Frogs/assets/icons-281520cc.svg#icon-youtube"></use>
+                <use href="/Battle-Frogs/assets/icons-8f0f77e1.svg#icon-youtube"></use>
               </svg>
             </a>
           </li>
