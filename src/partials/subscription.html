@@ -9,7 +9,7 @@
                 <div class="subscription__form-element">
                     <div class="subscription__input-wrap">
                         <input type="text" class="subscription__input" name="user-name" id="user-name"
-                            placeholder="Name" maxlength="16" minlength="2">
+                            placeholder="Name" maxlength="16" minlength="2" pattern="[A-Za-zА\s]+">
                         <svg class="subscription__form-error">
                             <use href="./img/icons.svg#icon-error"></use>
                         </svg>
@@ -18,7 +18,7 @@
                 <div class="subscription__form-element">
                     <div class="subscription__input-wrap">
                         <input type="email" class="subscription__input" name="user-email" id="user-email"
-                            placeholder="E-mail">
+                            placeholder="E-mail" pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}">
                         <svg class="subscription__form-error">
                             <use href="./img/icons.svg#icon-error"></use>
                         </svg>
