@@ -26,10 +26,6 @@
     padding-left: 20px;
 }
 
-.subscription__input::placeholder {
-    padding: auto 0;
-}
-
 .subscription__input:focus {
     border-color: var(--blue-font);
 }

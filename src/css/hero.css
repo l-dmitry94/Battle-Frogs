@@ -99,7 +99,7 @@
     max-width: 312px;
     color: var(--blue-font);
     font-size: 18px;
-    line-height: 1, 5; /* 150% */
+    line-height: 1.5; /* 150% */
   }
 }
 @media screen and (min-width: 1440px) {

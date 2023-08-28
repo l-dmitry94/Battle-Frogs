@@ -52,7 +52,7 @@
     }
 
     .products__list-item {
-        flex-basis: calc((100% - 24x) / 3);
+        flex-basis: calc((100% - 24px) / 3);
     }
 
     .products__list-item:not(:nth-child(-n + 1)) {
