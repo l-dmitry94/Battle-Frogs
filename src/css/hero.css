@@ -11,6 +11,12 @@
 .hero .container {
   padding-top: 140px;
 }
+
+.hero .btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 @media (min-device-pixel-ratio: 2),
   (min-resolution: 192dpi),
   (min-resolution: 2dppx) {
@@ -94,9 +100,6 @@
     color: var(--blue-font);
     font-size: 18px;
     line-height: 1, 5; /* 150% */
-  }
-  .container {
-    /* max-width: 768px; */
   }
 }
 @media screen and (min-width: 1440px) {
