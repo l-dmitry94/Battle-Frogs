@@ -1,3 +1,10 @@
+@media (min-width: 320px) and (max-width: 375px) {
+    .subscription__check-text {
+        font-size: 14px;
+        align-items: center;
+    }
+}
+
 .subscription {
     margin: 64px 0;
 }
@@ -14,16 +21,13 @@
     margin-bottom: 30px;
 }
 
-.subscription__form-element {
-    margin-bottom: 20px;
-}
-
 .subscription__input {
     width: 100%;
     height: 50px;
     border: 1px solid var(--dark-grey);
     border-radius: 4px;
     padding-left: 20px;
+    outline: transparent;
 }
 
 .subscription__input:focus {
@@ -37,6 +41,31 @@
 .subscription__check-text {
     color: var(--checkbox-color);
     display: flex;
+    align-items: center;
+}
+.subscription__input-wrap{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+}
+.subscription__form-error {
+    width: 24px;
+    height: 24px;
+    margin-right: 20px;
+    transform: translateY(-160%);
+    fill: #E74A3B;
+    transition: opacity 0.3s ease-in-out;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.subscription__input:invalid {
+    border-color: #E74A3B;
+}
+
+.subscription__input:invalid+.subscription__form-error {
+    opacity: 1;
+    visibility: visible;
 }
 
 .subscription__span {
@@ -50,17 +79,16 @@
     margin-right: 8px;
 }
 
-/* Нужно выкачать иконку нормально */
 .subscription__check:checked+.subscription__check-text .subscription__span {
     background-color: var(--blue-font);
     border: none;
     stroke: var(--white);
 }
 
-/* НУжно добавить цвет в вары и прописать через вар, потом этот стиль добавить в reset.css */
 .btn:hover,
 .btn:focus {
     background-color: #061835;
+
 }
 
 @media (min-width: 768px) {
@@ -115,9 +143,5 @@
 
     .subscription__form {
         margin-bottom: 0;
-    }
-
-    .subscription__form-element {
-        margin-bottom: 22px;
     }
 }
