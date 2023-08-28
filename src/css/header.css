@@ -84,8 +84,8 @@
 
 .scroll-button {
     position: fixed;
-    right: 20px;
-    bottom: 20px;
+    right: 50px;
+    bottom: 80px;
     display: flex;
     align-items: center;
     justify-content: center;
