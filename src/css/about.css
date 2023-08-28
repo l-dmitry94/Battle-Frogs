@@ -1,4 +1,5 @@
 .about {
+    transition: all 300ms ease-in-out;
     padding: 64px 0 32px;
 }
 
