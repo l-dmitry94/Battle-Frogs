@@ -64,6 +64,7 @@
     position: fixed;
     top: 88px;
     left: 0;
+    z-index: 100;
     transform: translateX(-100%);
     display: flex;
     justify-content: center;
@@ -84,7 +85,7 @@
 
 .scroll-button {
     position: fixed;
-    right: 50px;
+    right: 20px;
     bottom: 80px;
     display: flex;
     align-items: center;
@@ -118,9 +119,14 @@
         height: 40px;
     }
 
+    .mobile-menu {
+        top: 95px;
+    }
+
     .scroll-button {
         width: 54px;
         height: 54px;
+        right: 50px;
     }
 
     .scroll-button__icon {
