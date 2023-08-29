@@ -33,8 +33,7 @@
 .reviews__list-customer-text {
 	font-size: 14px;
 	line-height: 1.29;
-	color: var(--blue-font);
-	opacity: 0.8;
+	color: rgba(var(--blue-font), 0.8);
 }
 .reviews__list-text {
 	font-size: 14px;
